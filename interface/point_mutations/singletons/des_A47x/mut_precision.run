@@ -1,0 +1,5 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_A47F.silent -out:prefix des_A47F_. -parser:script_vars where=47B to=PHE
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_A47L.silent -out:prefix des_A47L_. -parser:script_vars where=47B to=LEU
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_A47I.silent -out:prefix des_A47I_. -parser:script_vars where=47B to=ILE
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_A47M.silent -out:prefix des_A47M_. -parser:script_vars where=47B to=MET
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_A47V.silent -out:prefix des_A47V_. -parser:script_vars where=47B to=VAL

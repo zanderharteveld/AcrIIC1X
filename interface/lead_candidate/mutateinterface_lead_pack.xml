@@ -1,0 +1,40 @@
+<ROSETTASCRIPTS>
+       <SCOREFXNS>
+                <ScoreFunction name="sfxn_stand" weights="ref2015" />
+		<ScoreFunction name="sfxn_cart" weights="ref2015_cart" />
+		<ScoreFunction name="sfxn_soft" weights="ref2015_soft" />
+        </SCOREFXNS>
+       <RESIDUE_SELECTORS>
+        </RESIDUE_SELECTORS>
+       <TASKOPERATIONS>
+       		<InitializeFromCommandline name="init"/>
+		    <ReadResfile name="rf" filename="rf_%%variant%%.txt" />
+		</TASKOPERATIONS>
+	<FILTERS>
+		<TotalSasa name="sasa" threshold="800" confidence="0.0"/>
+		<Rmsd name="rmsd" threshold="3" confidence="0.0"/>
+		<ShapeComplementarity name="shapecomp" confidence="0.0"/>
+	</FILTERS>
+	<MOVERS>
+		    <PackRotamersMover name="design1" scorefxn="sfxn_stand" task_operations="init,rf"/>
+            <MinMover name="minimize1" scorefxn="sfxn_cart" chi="true" bb="false" cartesian="true" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="200" />
+
+            <PackRotamersMover name="design2" scorefxn="sfxn_stand" task_operations="init,rf"/>
+            <MinMover name="minimize2" scorefxn="sfxn_cart" chi="true" bb="false" cartesian="true" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="200" />
+
+           	<InterfaceAnalyzerMover name="interface_analysis" scorefxn="sfxn_stand" />
+			<ddG name="ddg_mover" jump="1" per_residue_ddg="1" scorefxn="sfxn_stand" />
+	</MOVERS>
+       <PROTOCOLS>
+		<Add mover_name="design1" />
+		<Add mover_name="minimize1" />
+        <Add mover_name="design2"/>
+        <Add mover_name="minimize2" />
+
+		<Add mover_name="interface_analysis" />
+		<Add mover_name="ddg_mover" />
+		<Add filter_name="sasa"/>
+		<Add filter_name="shapecomp"/>
+		<Add filter_name="rmsd"/>
+       </PROTOCOLS>
+</ROSETTASCRIPTS>

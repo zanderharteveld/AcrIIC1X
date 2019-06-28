@@ -1,0 +1,5 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_K46D.silent -out:prefix des_K46D_. -parser:script_vars where=46B to=ASP
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_K46E.silent -out:prefix des_K46E_. -parser:script_vars where=46B to=GLU
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_K46Q.silent -out:prefix des_K46Q_. -parser:script_vars where=46B to=GLN
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_K46N.silent -out:prefix des_K46N_. -parser:script_vars where=46B to=ASN
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_K46R.silent -out:prefix des_K46R_. -parser:script_vars where=46B to=ARG

@@ -1,0 +1,4 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D14E.silent -out:prefix des_D14E_. -parser:script_vars where=14B to=GLU
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D14Q.silent -out:prefix des_D14Q_. -parser:script_vars where=14B to=GLN
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D14N.silent -out:prefix des_D14N_. -parser:script_vars where=14B to=ASN
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D14Y.silent -out:prefix des_D14Y_. -parser:script_vars where=14B to=TYR

@@ -1,0 +1,10 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76S.silent -out:prefix des_M76S_. -parser:script_vars where=76B to=SER
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76T.silent -out:prefix des_M76T_. -parser:script_vars where=76B to=THR
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76E.silent -out:prefix des_M76E_. -parser:script_vars where=76B to=GLU
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76D.silent -out:prefix des_M76D_. -parser:script_vars where=76B to=ASP
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76Q.silent -out:prefix des_M76Q_. -parser:script_vars where=76B to=GLN
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76N.silent -out:prefix des_M76N_. -parser:script_vars where=76B to=ASN
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76V.silent -out:prefix des_M76V_. -parser:script_vars where=76B to=VAL
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76L.silent -out:prefix des_M76L_. -parser:script_vars where=76B to=LEU
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76I.silent -out:prefix des_M76I_. -parser:script_vars where=76B to=ILE
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_M76A.silent -out:prefix des_M76A_. -parser:script_vars where=76B to=ALA

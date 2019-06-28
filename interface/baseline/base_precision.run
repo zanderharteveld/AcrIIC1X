@@ -1,0 +1,1 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags -nstruct 1 -out:file:silent baseline.silent

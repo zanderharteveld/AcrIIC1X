@@ -1,0 +1,5 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D44R.silent -out:prefix des_D44R_. -parser:script_vars where=44B to=ARG
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D44K.silent -out:prefix des_D44K_. -parser:script_vars where=44B to=LYS
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D44F.silent -out:prefix des_D44F_. -parser:script_vars where=44B to=PHE
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D44W.silent -out:prefix des_D44W_. -parser:script_vars where=44B to=TRP
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_D44Y.silent -out:prefix des_D44Y_. -parser:script_vars where=44B to=TYR

@@ -1,0 +1,7 @@
+-s ../../in/acrIIc1_sauCas9hnh_motali.pdb 
+-parser:protocol packinterface.xml
+-resfile resfile
+-ex1
+-ex2
+-extrachi_cutoff 5
+-ignore_unrecognized_res

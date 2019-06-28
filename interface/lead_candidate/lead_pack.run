@@ -1,0 +1,2 @@
+/scratch/hartevel/bin/Rosetta_acrIIa1/main/source/bin/rosetta_scripts.linuxiccrelease  @flags_pack -nstruct 20 -out:file:silent ../../out/lead_FQI.silent -out:prefix lead_FQI_. -parser:script_vars variant=FQI > ../../out/lead_FQI.log &
+/scratch/hartevel/bin/Rosetta_acrIIa1/main/source/bin/rosetta_scripts.linuxiccrelease  @flags_pack -nstruct 20 -out:file:silent ../../out/lead_YQT.silent -out:prefix lead_YQT_. -parser:script_vars variant=YQT > ../../out/lead_YQT.log &

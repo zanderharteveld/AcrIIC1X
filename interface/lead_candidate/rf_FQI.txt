@@ -1,0 +1,5 @@
+NATRO
+start
+2 B PIKAA F
+14 B PIKAA Q
+47 B PIKAA I

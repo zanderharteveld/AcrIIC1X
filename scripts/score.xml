@@ -1,0 +1,42 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+        <ScoreFunction name="sfxn_stand" weights="ref2015" />
+        <ScoreFunction name="sfxn_cart" weights="ref2015_cart" />
+        <ScoreFunction name="sfxn_soft" weights="ref2015_soft" />
+        <ScoreFunction name="scorefxn1" weights="fldsgn_cen" />
+    </SCOREFXNS>
+    <RESIDUE_SELECTORS>
+        <Chain name="acr" chains="B" />
+    </RESIDUE_SELECTORS>
+    <SIMPLE_METRICS>
+        <!--<PerResidueEnergyMetric name="perres"      custom_type="en" output_as_pdb_nums="True" scoretype="total_score" scorefxn="sfxn_stand" />-->
+        <!--<PerResidueEnergyMetric name="perres_rama" custom_type="ra" output_as_pdb_nums="True" scoretype="rama" scorefxn="sfxn_stand" />-->
+    </SIMPLE_METRICS>
+    <TASKOPERATIONS>
+        <InitializeFromCommandline name="init"/>
+    </TASKOPERATIONS>
+    <FILTERS>
+        <ScoreType name="acr_score" score_type="total_score" threshold="0.0" confidence="0" />
+        <TotalSasa name="sasa" threshold="800" confidence="0.0"/>
+        <Rmsd name="rmsd" threshold="3" confidence="0.0"/>
+        <ChainBreak name="breaks" threshold="1" confidence="0.0"/>
+    </FILTERS>
+    <MOVERS>
+        <!--<RunSimpleMetrics name="run_metrics"  metrics="perres"/>-->
+        <!--<RunSimpleMetrics name="run_metrics_rama" metrics="perres_rama"/>-->
+        <ddG name="ddg_mover" jump="1" per_residue_ddg="1" scorefxn="sfxn_stand" />
+        <InterfaceAnalyzerMover name="interface_analysis" scorefxn="sfxn_stand" />
+    </MOVERS>
+    <PROTOCOLS>
+        <Add filter_name="breaks"/>
+
+        <!--<Add mover_name="run_metrics" />-->
+        <!--<Add mover_name="run_metrics_rama" />-->
+
+        <Add filter_name="acr_score"/>
+
+        <Add mover_name="ddg_mover" />
+        <Add filter_name="sasa"/>
+        <Add mover_name="interface_analysis" />
+    </PROTOCOLS>
+</ROSETTASCRIPTS>

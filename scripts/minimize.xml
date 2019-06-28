@@ -1,0 +1,20 @@
+<ROSETTASCRIPTS>
+       <SCOREFXNS>
+                <ScoreFunction name="sfxn_stand" weights="ref2015" />
+		<ScoreFunction name="sfxn_cart" weights="ref2015_cart" />
+		<ScoreFunction name="sfxn_soft" weights="ref2015_soft" />
+        </SCOREFXNS>
+       <RESIDUE_SELECTORS>
+        </RESIDUE_SELECTORS>
+       <TASKOPERATIONS>
+       		<InitializeFromCommandline name="init"/>
+		</TASKOPERATIONS>
+	<FILTERS>
+	</FILTERS>
+	<MOVERS>
+            <MinMover name="minimize" scorefxn="sfxn_cart" chi="true" bb="false" cartesian="true" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="200" />
+	</MOVERS>
+       <PROTOCOLS>
+		<Add mover_name="minimize" />
+       </PROTOCOLS>
+</ROSETTASCRIPTS>

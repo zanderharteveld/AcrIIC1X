@@ -1,0 +1,5 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_N2W.silent -out:prefix des_N2W_. -parser:script_vars where=2B to=TRP
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_N2Y.silent -out:prefix des_N2Y_. -parser:script_vars where=2B to=TYR
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_N2F.silent -out:prefix des_N2F_. -parser:script_vars where=2B to=PHE
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_N2L.silent -out:prefix des_N2L_. -parser:script_vars where=2B to=LEU
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_N2I.silent -out:prefix des_N2I_. -parser:script_vars where=2B to=ILE

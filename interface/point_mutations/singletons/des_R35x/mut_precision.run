@@ -1,0 +1,5 @@
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_R35F.silent -out:prefix des_R35F_. -parser:script_vars where=35B to=PHE
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_R35W.silent -out:prefix des_R35W_. -parser:script_vars where=35B to=TRP
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_R35Y.silent -out:prefix des_R35Y_. -parser:script_vars where=35B to=TYR
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_R35D.silent -out:prefix des_R35D_. -parser:script_vars where=35B to=ASP
+/home/hartevel/bin/Rosetta/main/source/bin/rosetta_scripts.linuxiccrelease @flags2 -nstruct 1 -out:file:silent single_R35E.silent -out:prefix des_R35E_. -parser:script_vars where=35B to=GLU
