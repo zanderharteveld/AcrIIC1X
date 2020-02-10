@@ -21,5 +21,8 @@ Contains the pdb files for the Acr (based on PDB 5VGB) and mCherry (based on PDB
 **scripts/**
 Contains different scripts used troughout this work.
 
+**experimental/**
+Contains experimental data and its analysis pipeline in form of a notebook.
+
 
 *Rosetta version used for design and scoring: 2018.18.post.dev+132.HEAD.ab819933844 ab819933844e0ed13e59fce789cf06bd09350875*
